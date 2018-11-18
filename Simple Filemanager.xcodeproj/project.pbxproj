@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4E64D567219C303800E39CA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D566219C303800E39CA1 /* AppDelegate.swift */; };
-		4E64D569219C303800E39CA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D568219C303800E39CA1 /* ViewController.swift */; };
+		4E64D569219C303800E39CA1 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D568219C303800E39CA1 /* DocumentsViewController.swift */; };
 		4E64D56C219C303800E39CA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E64D56A219C303800E39CA1 /* Main.storyboard */; };
 		4E64D56E219C303D00E39CA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E64D56D219C303D00E39CA1 /* Assets.xcassets */; };
 		4E64D571219C303D00E39CA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E64D56F219C303D00E39CA1 /* LaunchScreen.storyboard */; };
+		4E64D579219C36A300E39CA1 /* DocumentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D578219C36A300E39CA1 /* DocumentsTableViewCell.swift */; };
+		4E64D57B219C36FE00E39CA1 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D57A219C36FE00E39CA1 /* Document.swift */; };
+		4E64D57D219C381700E39CA1 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D57C219C381700E39CA1 /* FileManagerService.swift */; };
+		4E64D57F219DF7D600E39CA1 /* ShowContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64D57E219DF7D600E39CA1 /* ShowContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E64D563219C303800E39CA1 /* Simple Filemanager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Filemanager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E64D566219C303800E39CA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E64D568219C303800E39CA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4E64D568219C303800E39CA1 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		4E64D56B219C303800E39CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E64D56D219C303D00E39CA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E64D570219C303D00E39CA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E64D572219C303D00E39CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E64D578219C36A300E39CA1 /* DocumentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsTableViewCell.swift; sourceTree = "<group>"; };
+		4E64D57A219C36FE00E39CA1 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		4E64D57C219C381700E39CA1 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		4E64D57E219DF7D600E39CA1 /* ShowContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		4E64D565219C303800E39CA1 /* Simple Filemanager */ = {
 			isa = PBXGroup;
 			children = (
-				4E64D566219C303800E39CA1 /* AppDelegate.swift */,
-				4E64D568219C303800E39CA1 /* ViewController.swift */,
 				4E64D56A219C303800E39CA1 /* Main.storyboard */,
-				4E64D56D219C303D00E39CA1 /* Assets.xcassets */,
-				4E64D56F219C303D00E39CA1 /* LaunchScreen.storyboard */,
+				4E64D568219C303800E39CA1 /* DocumentsViewController.swift */,
+				4E64D578219C36A300E39CA1 /* DocumentsTableViewCell.swift */,
+				4E64D57C219C381700E39CA1 /* FileManagerService.swift */,
+				4E64D57A219C36FE00E39CA1 /* Document.swift */,
+				4E64D57E219DF7D600E39CA1 /* ShowContentViewController.swift */,
+				4E64D58021A0B11200E39CA1 /* Supporting Files */,
+				4E64D566219C303800E39CA1 /* AppDelegate.swift */,
 				4E64D572219C303D00E39CA1 /* Info.plist */,
 			);
 			path = "Simple Filemanager";
+			sourceTree = "<group>";
+		};
+		4E64D58021A0B11200E39CA1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E64D56D219C303D00E39CA1 /* Assets.xcassets */,
+				4E64D56F219C303D00E39CA1 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E64D569219C303800E39CA1 /* ViewController.swift in Sources */,
+				4E64D57D219C381700E39CA1 /* FileManagerService.swift in Sources */,
+				4E64D57B219C36FE00E39CA1 /* Document.swift in Sources */,
+				4E64D579219C36A300E39CA1 /* DocumentsTableViewCell.swift in Sources */,
+				4E64D57F219DF7D600E39CA1 /* ShowContentViewController.swift in Sources */,
+				4E64D569219C303800E39CA1 /* DocumentsViewController.swift in Sources */,
 				4E64D567219C303800E39CA1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,16 +306,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Simple Filemanager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "veronika.danilova.Simple-Filemanager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,16 +327,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Simple Filemanager/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "veronika.danilova.Simple-Filemanager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
